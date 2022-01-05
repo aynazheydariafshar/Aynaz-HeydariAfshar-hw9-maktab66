@@ -9,8 +9,8 @@ const calCheck = input => {
             num.push(+item);
         }else{
             ma.push(item);
-        }
-    })
+        };
+    });
     
     //check math and check fixbug
     ma.map(item => {
@@ -21,6 +21,7 @@ const calCheck = input => {
                 output = num1 + num2;
                 num.push(output);
                 break;
+
             case '*':
                 output = num1 * num2;
                 num.push(output);
@@ -31,7 +32,7 @@ const calCheck = input => {
                     output = num1 - num2;
                 }else{
                     output = num2 - num1;
-                }
+                };
                 num.push(output);
                 break;
       
@@ -40,27 +41,35 @@ const calCheck = input => {
                     throw "Can't divide by 0";
                 } else {
                     output = num1 / num2;
-                }
+                };
                 num.push(output);
-                break;    
+                break; 
+
             default:
             throw `Invalid instruction:${item}`;        
-        } 
-    })  
+        }; 
+    });  
     return output;
-}
+};
 
 const stackCalc = input => {
 
+    //check input must be string
+    if(typeof input !== 'string'){
+        throw 'please enter string';
+    };
+
     input = input.split(" ");
+
     if(input === ""){
         return 0;
-    }
+    };
+
     input.map((item , index) => {
         if(item === 'DUP'){
            input.splice(index,1,input[index-1]);
         }
-    })
+    });
 
     const resault = calCheck(input);
     return resault;
