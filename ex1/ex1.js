@@ -12,6 +12,12 @@ const timeToConvert = input => {
 };
 
 const timetoduration = input => {
+
+    //check input is string
+    if(typeof input !== "string"){
+        throw "please enter string"
+    }
+    
     //convert time
     const res = timeToConvert(input);
 
