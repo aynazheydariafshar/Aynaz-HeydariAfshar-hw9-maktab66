@@ -1,5 +1,68 @@
-const StackCalc = input => {
+const calCheck = input => {
+    const num  = [];
+    const ma = [];
+    let output = 0;
 
+    //seprate number and string
+    input.map(item =>{
+        if(!isNaN(+item)){
+            num.push(+item);
+        }else{
+            ma.push(item);
+        }
+    })
+    
+    //check math and check fixbug
+    ma.map(item => {
+        const num1 = num.pop();
+        const num2 = num.pop();
+        switch(item){
+            case '+':
+                output = num1 + num2;
+                num.push(output);
+                break;
+            case '*':
+                output = num1 * num2;
+                num.push(output);
+                break;
+      
+            case '-':
+                if(num1>num2){
+                    output = num1 - num2;
+                }else{
+                    output = num2 - num1;
+                }
+                num.push(output);
+                break;
+      
+            case '/': 
+                if (num2 === 0) {
+                    throw "Can't divide by 0";
+                } else {
+                    output = num1 / num2;
+                }
+                num.push(output);
+                break;    
+            default:
+            throw `Invalid instruction:${item}`;        
+        } 
+    })  
+    return output;
 }
 
-console.log(StackCalc("5 6 +"))
+const stackCalc = input => {
+    input = input.split(" ");
+    if(input === ""){
+        return 0;
+    }
+    input.map((item , index) => {
+        if(item === 'DUP'){
+           input.splice(index,1,input[index-1]);
+        }
+    })
+
+    const resault = calCheck(input);
+    return resault;
+}
+
+console.log(stackCalc("x y +"))
