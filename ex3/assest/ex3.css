@@ -5,6 +5,10 @@
     color: rgb(167, 167, 167);
 }
 
+.headerthree span , .p-contentthree span{
+    color: #ffbe0b;
+}
+
 .imagetext{
     margin-bottom: 6rem;
 }
@@ -22,4 +26,43 @@
     border-top: 3px solid black;
     left: 49%;
     width: 60px;
+}
+.item-even{
+    background-color: rgb(204, 202, 202);
+}
+
+.circle-icon{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nextt{
+    font-size: 50px;
+    margin-left: 20px;
+    margin-top: 50px ;
+    color: rgb(136, 136, 136);
+}
+
+.icones-bg{
+    background-color: rgb(75, 74, 74);
+    border-radius: 50%;
+    color: white;
+    padding: 50px;
+}
+
+.number-circle{
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    line-height: 32px;
+    display: inline-block;
+    background-color: #ffbe0b;
+    border-radius: 50%;
+    color: #000000;
+    position: absolute;
+    top: 20px;
+}
+
+.iconfour{
+    margin-right: 100px;
 }
