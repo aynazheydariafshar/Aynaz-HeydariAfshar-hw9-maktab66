@@ -51,6 +51,7 @@ const calCheck = input => {
 }
 
 const stackCalc = input => {
+
     input = input.split(" ");
     if(input === ""){
         return 0;
@@ -65,4 +66,8 @@ const stackCalc = input => {
     return resault;
 }
 
-console.log(stackCalc("x y +"))
+console.log(stackCalc(""));
+console.log(stackCalc("5 6 +"));
+console.log(stackCalc("3 DUP +"));
+console.log(stackCalc("6 5 5 7 * - /"));
+console.log(stackCalc("x y +"));
