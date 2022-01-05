@@ -15,29 +15,27 @@ const timetoduration = input => {
     
     //check input is string
     if(typeof input !== "string"){
-        throw "please enter string"
+        throw "please enter string";
     }
     
     //convert time
     const res = timeToConvert(input);
 
-    let houre = res[0]
-    let minute = res[1]
+    let houre = res[0];
+    let minute = res[1];
 
     //check time with meal
     if(houre>=0 && houre <= 7){
-        houre = 7 - houre
+        houre = 7 - houre;
     }else if(7 < houre  && houre  <= 12){
-        houre = 12 - houre
+        houre = 12 - houre;
     }else if(12 < houre  && houre  <= 19){
-        houre = 19 - houre
+        houre = 19 - houre;
     }else if(19 < houre  && houre  <= 23){
-        houre = houre - 12
-        houre = 19 - houre
+        houre = houre - 12;
+        houre = 19 - houre;
     }
 
-    //if time is meal
-    
 
     //set min
     if(minute === 00){
@@ -50,5 +48,5 @@ const timetoduration = input => {
     return [houre , minute];
 }
 
-console.log(timetoduration("12:00 p.m."));
-console.log(timetoduration("00:00 a.m."));
+console.log(timetoduration("2:00 p.m."));
+console.log(timetoduration("5:50 a.m."));
