@@ -142,3 +142,13 @@ div.container {
     padding:6px 20px;
     border: none;
 }
+
+.text-logo-footer{
+    width: 20%;
+    float: left;
+    margin:30px;
+}
+
+.continer-footer{
+    width: 100%;
+}
