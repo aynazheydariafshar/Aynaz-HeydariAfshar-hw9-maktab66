@@ -1,12 +1,13 @@
+body{
+    overflow-x: hidden
+}
+
 .navbar-nav {
     margin-left: auto;
 }
+
 #navh1{
     color: rgb(167, 167, 167);
-}
-
-.headerthree span , .p-contentthree span{
-    color: #ffbe0b;
 }
 
 .imagetext{
@@ -65,4 +66,15 @@
 
 .iconfour{
     margin-right: 100px;
+}
+
+.fa-check{
+    color:#ffbe0b ;
+}
+
+.social-icon , .footer-icons{
+    font-size: 1.5em
+}
+.footer-end{
+    background-color: rgb(70, 70, 70);
 }
