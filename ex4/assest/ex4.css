@@ -151,4 +151,28 @@ div.container {
 
 .continer-footer{
     width: 100%;
+    overflow: auto;
+}
+
+.footer{
+    background-color:rgb(85, 193, 255);
+    width: 100%;
+}
+
+.footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.btnSubscribe:hover{
+    background-color: rgb(255, 224, 85);
+    cursor: pointer;
+    color: black;
+}
+
+.btnView:hover{
+    background-color: rgb(255, 224, 85);
+    cursor: pointer;
+    color: black;
 }
