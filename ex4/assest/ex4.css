@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu{
+    position: relative;
+}
+
+.menuRight{
+    float: right;
+    margin: 30px;
+}
+
+.menuCenter{
+    float: right;
+    margin: 30px 120px 0px 0px;
+}
+
+.menuRight a{
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+}
+.menuCenter .active{
+    color: rgb(255, 215, 38);
+}
+
+.menuCenter a{
+    text-decoration: none;
+    color:rgb(85, 193, 255);
+    padding: 30px;
+}
+
+.menuCenter a:hover{
+    color: rgb(255, 215, 38);
+    cursor: pointer;
+}
+
+.logo{
+    width: 200px;
+    margin: 10px;
+}
+
+.line{
+    border-left: 2px solid rgb(158, 158, 158);
+    height: 80px;
+    position: absolute;
+    right: 120px;
+    top: 0px;
+}
+
+.menuSecond{
+    background-color:rgb(85, 193, 255);
+    width: 100%;
+    overflow: auto;
+}
+
+.textLeft{
+    float: left;
+    padding:10px 30px;
+    margin-top: 10px;
+    color: white;
+}
+
+.textRight{
+    float: right;
+    padding:10px 30px;
+    color: white;
+}
+
+.headerDestination{
+    text-align: center;
+    margin-top: 60px;
+}
+.headerDestination h1{
+    color:rgb(85, 193, 255);
+}
